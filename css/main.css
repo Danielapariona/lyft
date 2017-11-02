@@ -4,12 +4,11 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
+  margin: 0;
 }
 
 *:before, *:after {
@@ -52,14 +51,44 @@ header {
   background-color: pink;
   padding: 17px 15px;
   background-color: #27103E;
+  background-image: url(../assets/images/hero.gif);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: 100% 100%;
+}
+
+.intro {
+  background-color: #fff;
+  height: 420px;
+  width: 560px;
+  float: right;
+  padding: 55px;
+}
+
+.intro .text-small {
+  font-size: 10px;
+  color: #728099;
+}
+
+.intro .text a:hover {
+  text-decoration: underline;
+}
+
+.title {
+  font-size: 25px;
+  font-size: 45px;
+  line-height: 50px;
 }
 
 .logo img {
-  width: 50px;
+  width: 70px;
 }
+
 .navegacion {
   overflow: auto;
+  margin: 25px;
 }
+
 .logo {
   display: inline-block;
   margin-left: 50px;
@@ -69,16 +98,47 @@ header {
   display: inline-block;
   float: right;
   transform: translateY(50%);
-  margin-right: 115px;
+  margin-right: 120px;
 }
 
 .navegacion-elementos .elemento {
   display: inline-block;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
-.elemento .btn {
+.navegacion .elemento .btn {
   border: 1px solid #fff;
-  padding: 7px;
+  padding: 12px;
   border-radius: 5px;
+}
+
+.color-purple {
+  color: #352384;
+}
+
+.color-pink {
+  color: #FF00BF;
+}
+
+.box-input input {
+  outline: 0;
+  border: none;
+  margin: 7px 0;
+}
+
+.box-input {
+  border-bottom: 1px solid #352384;
+  margin: 20px 0;
+}
+
+.formulario .btn {
+  cursor: pointer;
+  border: 1px solid transparent;
+  padding: .75rem 1.25rem;
+  font-size: 16px;
+  line-height: 1.5;
+  border-radius: 5px;
+  background-color: #FF00BF;
+  color: #fff;
+  font-weight: 700;
 }
