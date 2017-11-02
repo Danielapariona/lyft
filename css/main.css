@@ -9,6 +9,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
+  color: #fff;
 }
 
 *:before, *:after {
@@ -38,12 +39,21 @@ a {
   text-decoration: none;
 }
 
+section {
+  content: "";
+  display: table;
+}
 a:hover {
   color: #FF00BF;
 }
 
 .text-uppercase {
   text-transform: uppercase;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
 }
 
 /*Header*/
@@ -141,4 +151,40 @@ header {
   background-color: #FF00BF;
   color: #fff;
   font-weight: 700;
+}
+
+/*Section Detalles*/
+.detalles {
+  background: linear-gradient(#76278F, #2B1E66);
+  width: 100%;
+  padding: 70px 0 50px 0;
+}
+
+.caracteristicas .elemento {
+  padding-bottom: 10px;
+}
+
+.detalles .caracteristicas {
+  display: inline-block;
+  width: 50%;
+}
+
+.subtitle {
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.detalles .caracteristicas p {
+  line-height: 1.5;
+}
+
+.detalles figure {
+  display: inline-block;
+  float: right;
+  position: relative;
+  left: 60px;
+}
+
+.detalles figure img{
+  width: 423px;
 }
